@@ -42,10 +42,8 @@ public class RunSpringApp {
 		System.out.println("\nMemory location for theCoach " + theCoach);
 		
 		
-		//Bean life cycle : for prototype scope the destroy method is not call
-		
-		
-		
+		//Bean life cycle : for prototype scope the destroy method(@PreDestroy) is not call
+		//for destroy method to be call must close the context
 		
 		context.close();
 
